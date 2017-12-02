@@ -1,6 +1,10 @@
 ---
-layout: post
-title: Mathematical Logic
+title: "Comp105 Answers Explained"
+categories:
+  - Comp105
+tags:
+  - Haskell
+  - Functional
 ---
 # What is logic
 
@@ -165,7 +169,9 @@ Now we simply need to construct a truth table for these values
 
 p | q | ¬p | ¬q | p => q | ¬p => ¬q | q => ¬p | ¬q => ¬p
 --- | --- | --- | --- | --- | --- | --- | ---
-0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 1
+0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | = 1
+
+Then we stop here because we've found an interpretation under which they are both knaves which is satisfiable. 
 
 
 TK to finish TODO: finish
@@ -173,72 +179,11 @@ TK to finish TODO: finish
 ## Semantic Conseqeuence
 
 
-
-
-
-Symbol in logic
-
-Symbol in electronics
-
-What does it do
-
-Truth Table
-
-
-
-Not ¬
-
+TODO: finish this TK
 
 
 ## Digital Logic Circuits
-Modern computers use logic gates to operate. This section will explain logic gates.
-
-## Basic Logic Gates
-
-**AND Gate**
-
-The AND gate takes two inputs and if both inputs are true then the resultant is true.
-If A and B are true then output true.
-
-![OR gate](https://sub.allaboutcircuits.com/images/04101.png)
-
-**Truth Table**
-A | B | A and B
---- | --- | ---
-1 | 1 | = 1
-1 | 0 | = 0
-0 | 1 | = 0
-0 | 0 | = 0
-
-**OR Gate**
-
-The OR Gate takes 2 inputs and if one of them is true then the output is true.
-A or B would be true if either A or B is true.
-
-![OR Gate](https://sub.allaboutcircuits.com/images/04131.png)
-
-**Truth Table**
-
-A | B | A or B
---- | --- | ---
-1 | 1 | = 1
-1 | 0 | = 1
-0 | 1 | = 1
-0 | 0 | = 0
-
-**NOT Gate**
-
-The NOT gate, otherwise known as an inverter, inverts the input.
-If True is inputted into the NOT gate, then False will come out of it.
-
-![NOT gate](https://i.ytimg.com/vi/DDecqMo3GDQ/hqdefault.jpg)
-
-**Truth Table**
-
-A | Not A
---- | ---
-1 | = 0
-0 | = 1
+Modern computers use logic gates to operate. You should have an understanding of logic gates from the above.
 
 ## General house keeping rules of making circuits
 
@@ -269,7 +214,7 @@ Sometimes it is easier to guess directly what logic gates are used.
 
 ## Circuit equivalence
 
-two circuits are equivalent if they produce the same output given the same input
+Two circuits are equivalent if they produce the same output given the same input
 
 ## Formula equivalence
 
@@ -313,41 +258,15 @@ Example:
 3 × (2 + 4) = 3 * 6 = 18
 3 × 2 + 3 × 4 = 6 + 12 = 18
 
-**And rules**
+**Demorgans' Laws** 
 
+(A ∪ B)' = (A)' ∩ (B)'
+The first law states that the complement of the union of two sets is the intersection of the complements.
 
-A and 0 = 0
-A and 1 = 1
-A and A = a
-A and not a = 0
+(A ∩ B)' = (A)' ∪ (B)'
+The second law states that the complement of the intersection of two sets is the union of the complements.
 
-**Truth Table**
-A | B | A and B
---- | --- | ---
-1 | 1 | = 1
-1 | 0 | = 0
-0 | 1 | = 0
-0 | 0 | = 0
-
-**Or rules**
-
-A or 0 = A
-A or 1 = 1
-A or A = A
-A or not A = 1
-
-**Truth Table**
-
-A | B | A or B
---- | --- | ---
-1 | 1 | = 1
-1 | 0 | = 1
-0 | 1 | = 1
-0 | 0 | = 0
-
-**Not rules**
-
-Sometimes called an inverter
+For a good blog post on understanding these laws, click (here)[https://brilliant.org/wiki/de-morgans-laws/]
 
 **Miscelanous rules**
 
@@ -363,6 +282,41 @@ If this is confusing still, maybe this video will help:
 https://www.youtube.com/watch?v=59BbncMjL8I
 
 TK put questions from tutorial here
+
+## Boolean Functions
+
+**Arity**
+The arity of a boolean function is how many arguments the function takes
+
+**Boolean function representation**
+
+Any boolean can be represented with ^, v, or ¬.
+
+## Logic Gates Extended
+In this section we will explore logic gates some more, by looking at the family of not / exclusive gates.
+
+## XOR
+
+**Symbol in Logic**
+
+None
+
+**Symbol in Electronics**
+
+![OR gate](https://www.electronicshub.org/wp-content/uploads/2015/06/or-gate-logic-symbol.jpg)
+
+**What it does**
+
+Takes > 1 inputs, if any of the inputs are true than the output is true.
+
+**Truth Table**
+
+A | B | A or B
+--- | --- | ---
+1 | 1 | = 1
+0 | 1 | = 1
+1 | 0 | = 1
+0 | 0 | = 0
 
 
 
