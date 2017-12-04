@@ -414,6 +414,22 @@ https://www.youtube.com/watch?v=VPw9vPN-3ac
 We can represent the full adder as a black box, we don't need to know what happens inside of it, only the inputs and outputs.
 
 ![Black-box](https://screenshots.firefoxusercontent.com/images/808f7049-0e48-45dd-8627-be875b7305cf.png)
+
+**4 bit adder**
+
+Using blackbox notation, we can create 4-bit adder
+
+http://www.electronics-tutorials.ws/combination/comb_7.html
+
+**Computer Representation of negative integers**
+
+A fixed number of bits is used to represent integers: 8, 16, 32 or 64 bits. 
+An unsigned integer can take up all the space available.
+
+You can "sign" a binary number to indicate whether it is negative or not. For example, the number 10 can be represented in 8-bit as 00001010 and -10 can be represented in 8-bit as 10001010
+
+But this sometimes causes a problem, for example, 10000000 represents -0. Whaaatt?? Negative 0? Yes! That's right, and that's exactly the problem this causes.
+
 <br>
 <br>
 
