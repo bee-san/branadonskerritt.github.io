@@ -430,6 +430,47 @@ You can "sign" a binary number to indicate whether it is negative or not. For ex
 
 But this sometimes causes a problem, for example, 10000000 represents -0. Whaaatt?? Negative 0? Yes! That's right, and that's exactly the problem this causes.
 
+This is where 2's complement comes into play.
+
+**Twos complement**
+
+Converting a decimal to twos complement
+
+1) Convert the number to binary, ignoring the sign for now. So 5 is 0101 and -5 is 0101.
+
+2) If the number is a positive number then you are done, no need to go any further. Otherwise...
+
+3) If the number is negative then:
+  * Find the complement (EG convert all 0's to 1's and all 1's to 0's)
+  * Add 1 to the complement
+
+So, invert all digits and add 1. Simple.
+
+If you want to know why this works, click [here](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html)
+
+**Addition in Binary, revisited**
+
+A carry that goes off the end can often be ignored, for example:
+
+-1 + -3
+  1111
++ 1101
+  1100
+with a carry of 1 that goes all the way to the left, it can be ignored.
+
+**Subtraction in binary**
+
+Treat this as addition but negate the second operand.
+So 4 - 3 is just 4 + (-3)
+
+Which is just 
+
+  0100
++ 1101
+  0001
+
+**Overflow**
+
 <br>
 <br>
 
