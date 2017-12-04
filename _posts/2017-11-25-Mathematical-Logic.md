@@ -303,20 +303,119 @@ None
 
 **Symbol in Electronics**
 
-![OR gate](https://www.electronicshub.org/wp-content/uploads/2015/06/or-gate-logic-symbol.jpg)
+![XOR gate](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/XOR_ANSI.svg/1200px-XOR_ANSI.svg.png)
 
 **What it does**
 
-Takes > 1 inputs, if any of the inputs are true than the output is true.
+An XOR gate takes >1 inputs and performs exclusive disjunction. The output of an XOR gate is only true if one of its inputs is different to the other input. 
 
 **Truth Table**
 
-A | B | A or B
+A | B | A xor B
 --- | --- | ---
-1 | 1 | = 1
+1 | 1 | = 0
 0 | 1 | = 1
 1 | 0 | = 1
 0 | 0 | = 0
 
+## NAND
+
+**Symbol in Logic**
+
+None
+
+**Symbol in Electronics**
+
+![NAND gate](https://upload.wikimedia.org/wikipedia/commons/c/cc/Logic-gate-nand-us.png)
+
+**What it does**
+
+A NAND gate takes >1 inputs and the output is the opposite of an AND gate. The output is true when one or more, but not all, of its inputs are false.
+
+**Truth Table**
+
+A | B | A xor B
+--- | --- | ---
+1 | 1 | = 0
+0 | 1 | = 1
+1 | 0 | = 1
+0 | 0 | = 1
+
+## Universality of XOR and NAND
+
+All boolean functions can be created using either XOR or NAND gates.
+
+# Number Systems and circuits for addition
+
+## Binary Numbering System
+
+Binary is a numbering system that consists of 0 and 1s.
+
+**Converting binary to decimal**
+
+![Divide by 2](https://screenshots.firefoxusercontent.com/images/c1eeec7c-08c6-4301-a2dc-11b9129f33b9.png)
+
+Alternatively, you could memorise the powers of 2.
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024...
+And then to convert a number into binary, let's say 6, you build that up from the different powers. So 6 is
+011 and then reverse that, 110
+
+Let's look at why this worked:
+System | 1 | 2 | 4 | 8 | 16
+---|---|---|---|---|---
+Binary | 0 | 1 | 1 | N/A | N/A
+
+This is because 6 can be broken into 2 and 4, which is why it's represented in binary as that.
+
+**Binary Addition**
+
+Somethings you need to know in binary
+0 + 0 = 0
+1 + 0 = 1
+0 + 1 = 1
+1 + 1 = 10
 
 
+Once you know these basic rules, you can add any numbers together in binary the same way you can add normal numbers. Try this exercise
+
+  011
++ 1101
+------
+
+**half-adder**
+
+The half adder is a type of binary adder in electronics that adds together two single binary digits and provides the output plus a carry value.
+
+![half-adder](http://www.geeksforgeeks.org/wp-content/uploads/gq/2015/07/halfadder1.gif)
+
+Note: Boris' half-adder is overcomplicated, you can achieve the same by replacing 3 of his logic gates with a single XOR gate.
+
+Truth Table
+
+P | Q | Carry | Sum
+--- | --- | --- | ---
+1 | 1 | 1 | 0
+1 | 0 | 0 | 1
+0 | 1 | 0 | 1
+0 | 0 | 0 | 0
+
+**Full-adder**
+
+The full adder allows you to carry-in as well as carry-out.
+
+![Full-adder](https://screenshots.firefoxusercontent.com/images/59c93a42-6759-414f-aea4-70cdc44ffac2.png)
+
+Watch this video for a better understanding
+
+https://www.youtube.com/watch?v=VPw9vPN-3ac
+
+**Black Box Notation**
+
+We can represent the full adder as a black box, we don't need to know what happens inside of it, only the inputs and outputs.
+
+![Black-box](https://screenshots.firefoxusercontent.com/images/808f7049-0e48-45dd-8627-be875b7305cf.png)
+<br>
+<br>
+
+# Connect with me
+[LinkedIn](https://www.linkedin.com/in/brandonls) | [GitHub](https://www.github.com/brandonskerritt) | [Website](https://www.brandonskerritt.github.io/about/)
