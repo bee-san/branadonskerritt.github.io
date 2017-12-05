@@ -66,10 +66,14 @@ Let T = {(2, 3),(1, 2),(3, 1)}. List the set of ordered pairs in the transitive 
 Which of the following sentences are propositions?
 
 (1) A banana is larger than its skin
-(2) London is the capital of Paris
+*(2) London is the capital of Paris*
 (3) Answer this question
-(4) 2 + 3 = 5
-(5) 5 + 7 = 10
+*(4) 2 + 3 = 5*
+*(5) 5 + 7 = 10*
+
+2,4,5.
+
+
 
 
 
