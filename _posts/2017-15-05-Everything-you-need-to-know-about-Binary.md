@@ -127,7 +127,7 @@ we can make it negative by adding a 1 to the front of it.
 10000000
 But -0, what is that? It's nothing. It's impossible. And that's where the problem comes from.
 
-## Unsigned Representation and Two's Complement
+## Two's Complement
 
 We can make a binary number negative by applying **two's complement** to it without the need to sign it.
 
@@ -145,5 +145,40 @@ then we add a 1 to the end
 11110001
 and now this represents -15! How creative and cool!
 
+## Addition in binary revisited
 
+TODO: fix this
+
+Let's say we have 2 numbers, -3 and -5.
+In binary these are:
+11, 101
+and we want to add them together.
+Firstly, we need to make it into a bit representation. So 11 would be:
+00000011
+and 101 would be
+00000101
+
+Then we turn them into two's complement
+11111100 + 1 = 11111101
+and
+11111010 + 1 = 11111011
+
+Now we add them together, but this time we can ignore any carries that go off the end.
+
+    11111101
++   11111011
+= ...???
+In 8 bit binary (note, if we carry 1's far to the left we can just ignore them)
+And then to get the negative result, we perform two's complement again to get
+
+**Subtraction in binary**
+
+Treat this as addition but negate the second operand.
+So 4 - 3 is just 4 + (-3)
+
+Which is just 
+
+  0100
++ 1101
+  0001
 
