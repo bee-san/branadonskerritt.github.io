@@ -153,21 +153,10 @@ Let's say we have 2 numbers, -3 and -5.
 In binary these are:
 11, 101
 and we want to add them together.
-Firstly, we need to make it into a bit representation. So 11 would be:
-00000011
-and 101 would be
-00000101
 
-Then we turn them into two's complement
-11111100 + 1 = 11111101
-and
-11111010 + 1 = 11111011
+But this time we can ignore any carries that go off the end.
 
-Now we add them together, but this time we can ignore any carries that go off the end.
 
-    11111101
-+   11111011
-= ...???
 In 8 bit binary (note, if we carry 1's far to the left we can just ignore them)
 And then to get the negative result, we perform two's complement again to get
 
