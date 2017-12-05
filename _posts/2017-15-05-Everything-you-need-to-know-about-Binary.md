@@ -25,5 +25,125 @@ Binary is a number system which only has 2 numbers, 0 and 1. We can count any nu
 
 Binary is often used in logic, 0 represents False of Off and 1 represents True or On.
 
-# How to convert from Binary to Decimal
+# How to convert from Decimal to Binary
+
+It is relatively easy to convert from binary to decimal. There are two popular methods.
+
+## First method
+
+Write down the decimal number and divide by 2 continually to give a result and a remainder of either a "1" or a "0" until the final result equals 0.
+
+![Stolen from http://www.electronics-tutorials.ws/binary/bin_2.html](https://screenshots.firefoxusercontent.com/images/7b9d27f5-7bb0-46d5-be24-7dbb8ada4ffc.png)
+
+## Second method
+
+This is my personal favourite method, but to do this you need to know your powers of 2.
+
+Powers of 2 are very important in computer science. Binary is represented as 2 numbers, so if you have 3 circuits then you will have 2^3 numbers, 0 through to 7.
+
+The powers of 2 are:
+
+2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192.
+
+And to make an odd number, we add 1 to the list so the list of numbers we need to know becomes:
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192.
+
+Okay, say we want to represent 15 as a binary number. First we need to split up 15 so it can be made up of powers of 2 + the number 1. The nearest power of 2 that is less than 15 is 8, so we'll use that. 8 + 4 is 12. 8 + 4 + 2 is 14, so we're very nearly there! Now we just add a 1. 15 represented as powers of 2 is 8 + 4 + 2 + 1.
+
+Now we know this, we can convert this simply.
+
+The binary to powers of 2 graph looks like this.
+8192 | 4096 | 2048 | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+
+If the number uses an 8, put a 1 in the binary box under it to represent that it uses an 8. I much prefer to use this method though:
+
+1 | 2 | 4 | 8
+--- | --- | --- | ---
+1 | 1 | 1 | 1
+
+And then normally we would need to reverse the binary numbers, but in this case because it's all just 1's we don't need to reverse. If we don't reverse them, we get the wrong binary number as binary is read with the highest order of magnitude to the left, not the lowest. Much like how in "10", the 1 is a whole place higher than the 0; the same applies for binary.
+
+You can convert binary to decimal in the opposite method.
+
+# Binary Addition
+
+Let's first review addition in decimal.
+
+    23
++   11
+
+We first add 3 + 1, that equals 4. then we add 2 + 1, which is 3. So the answer is 34.
+We add from the right to the left.
+
+Binary addition works the same.
+
+We will begin with one bit (binary digit) addition.
+
+    0
++   0
+=   1
+
+and
+
+    0  
++   1
+=   1
+
+and 
+
+    1
++   1
+=   10
+
+1 + 1 carries us into the next column.
+
+Try it yourself:
+
+    111
++   110
+=   ???
+
+Also, pretty much every operator works in the same way it does with binary as with decimal.
+
+# Representation of Negative Numbers in Binary
+
+## Signed Representation
+
+We can represent a binary number by applying a "sign" to it. 
+
+In Binary, numbers can be 4 bit, 8 bit, 16 bit, 32 bit and so on. 
+If we have an 8 bit number, it'll be 8 digits long.
+
+So let's say we have the number 1 in 8-bit binary, that'll be represented as:
+00000001
+to turn this negative, we add a 1 to the front of it
+10000001
+
+Although this sometimes causes a problem. Given the number 0 in 8-bit binary:
+00000000
+we can make it negative by adding a 1 to the front of it.
+10000000
+But -0, what is that? It's nothing. It's impossible. And that's where the problem comes from.
+
+## Unsigned Representation and Two's Complement
+
+We can make a binary number negative by applying **two's complement** to it without the need to sign it.
+
+Two's complement is a really simple algorithm:
+* invert all the digits so 0 becomes 1 and 1 becomes 0
+* add a +1 to the number
+
+and this makes it negative!
+
+So given the number 15, which is 1111, in 8-bit binary it'll be:
+00001111
+So to make this negative we invert all the digits:
+11110000
+then we add a 1 to the end
+11110001
+and now this represents -15! How creative and cool!
+
+
 

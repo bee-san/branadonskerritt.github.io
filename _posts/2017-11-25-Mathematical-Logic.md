@@ -351,7 +351,7 @@ All boolean functions can be created using either XOR or NAND gates.
 
 Binary is a numbering system that consists of 0 and 1s.
 
-**Converting binary to decimal**
+**Converting decimal to binary**
 
 ![Divide by 2](https://screenshots.firefoxusercontent.com/images/c1eeec7c-08c6-4301-a2dc-11b9129f33b9.png)
 
