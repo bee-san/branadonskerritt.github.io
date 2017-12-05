@@ -471,6 +471,18 @@ Which is just
 
 **Overflow**
 
+An example of this is 4 + 7
+
+  0100  
++ 0101
+  1001
+
+The correct result, 9, is too big to fit into 4 bit representation.
+
+If both inputs to an addition have the same sign, and the output sign is different, overflow has occured.
+
+Overflow cannot occur if the signs differ.
+
 <br>
 <br>
 
