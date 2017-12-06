@@ -13,13 +13,16 @@ To do this you need to make ordered pairs whereby the first element is the first
 
 # Question 2
 
-Let |A| = m and |B| = n. What is the cardinality of the set A × B?
+```Let |A| = m and |B| = n. What is the cardinality of the set A × B?```
 
 The cardinality is how many elements are in the set, represented by |A|. Count how many elements are in set A and B and then times them.
 
 2 * 3 = 6
 
 # Question 3
+
+List the set of ordered pairs of the relation R represented by the following digraph (diagraph in pdf)
+
 ```
 {(1,2)
 (2,1),(2,2)
@@ -28,17 +31,50 @@ The cardinality is how many elements are in the set, represented by |A|. Count h
 (5,1)}
 ```
 
-# 4
-# 4a)
+Remember that some arrows are _bi-directional_ or just 1 direction or just repeats onto itself.
+
+# Question 4
+
+## Part A
+
 Let A = {a, b, c}, B = {1, 2, 3, 4} and C = {3, 4, 5}.
 List the set of ordered pairs of the relation R between A and B represented by the following
 matrix.
+
+Matrix =
+
+F | T | T | T
+--- | --- | --- | ---
+F | F | T | T
+F | F | T | T
+
+
+Okay, so we know it's a relation between A and B, so the matrix will look something like
+
+ | 1 | 2 | 3 | 4
+--- | --- | --- | ---
+a |
+b |
+c |
+
+Then we will it in with the truth values from above
+
+ | 1 | 2 | 3 | 4
+--- | --- | --- | ---
+a | F | T | T | T
+b | F | F | T | T
+c | F | F | T | T
+
+Now we simply pull out the ordered pairs that appear as true in the matrix
+
 ```
 {(a,2),(a,3),(a,4)
 (b,3),(b,4)
 (c,3),(c,4)}
 ```
-# 4b)
+
+## Part B
+
 Let S ⊆ B × C be given by
 S = {(x, y) | x < y}.
 List the set of ordered pairs in the inverse relation S−1 of S.
@@ -51,7 +87,7 @@ B = {1, 2, 3, 4} and C = {3, 4, 5}.
 (4,5)
 ```
 
-# 4c)
+## Part C
 Compute the matrix representation of S ◦ R
 
 
@@ -63,20 +99,23 @@ S 1,  F,  F,  T,  T,  T
   5,  F,  F,  F,  F,  F
   
   
-# 5
+# Question 5
 Let T = {(2, 3),(1, 2),(3, 1)}. List the set of ordered pairs in the transitive closure of T
 *skipped*
 
-# 6
+# Question 6
+
 Which of the following sentences are propositions?
 
 (1) A banana is larger than its skin
-*(2) London is the capital of Paris*
+(2) London is the capital of Paris
 (3) Answer this question
-*(4) 2 + 3 = 5*
-*(5) 5 + 7 = 10*
+(4) 2 + 3 = 5
+(5) 5 + 7 = 10
 
-2,4,5.
+Question 1, 2, 4, and 5 are all propositional statements as they have a true or false value.
+
+
 
 
 
