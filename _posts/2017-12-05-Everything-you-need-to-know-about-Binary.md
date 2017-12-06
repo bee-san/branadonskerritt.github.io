@@ -1,5 +1,5 @@
 ---
-title: "Everything you need to know about Binary
+title: "Everything you need to know about Binary"
 categories:
   - Maths
 ---
