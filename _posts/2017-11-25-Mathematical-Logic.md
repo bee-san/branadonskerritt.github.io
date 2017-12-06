@@ -1,5 +1,5 @@
 ---
-title: "Comp105 Answers Explained"
+title: "Mathematical Logic"
 categories:
   - Comp105
 tags:

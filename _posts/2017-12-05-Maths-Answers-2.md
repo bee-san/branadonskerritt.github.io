@@ -3,18 +3,23 @@ title: "Math Answers Explained"
 categories:
   - Foundations
 ---
-# 1 
+# Question 1 
+
 Let A = {2, 3} and B = {a, b, c}. List the elements of A × B.
+
+To do this you need to make ordered pairs whereby the first element is the first element of set A and the second element is every element in set B.
 
 {(2,a), (2,b), (2,c), (3,a), (3,b), (3,c)}
 
-# 2
+# Question 2
+
 Let |A| = m and |B| = n. What is the cardinality of the set A × B?
-*Multiply both sets*
 
-6
+The cardinality is how many elements are in the set, represented by |A|. Count how many elements are in set A and B and then times them.
 
-# 3
+2 * 3 = 6
+
+# Question 3
 ```
 {(1,2)
 (2,1),(2,2)
