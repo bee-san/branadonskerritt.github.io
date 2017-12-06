@@ -68,8 +68,10 @@ You can convert binary to decimal in the opposite method.
 
 Let's first review addition in decimal.
 
+```
     23
 +   11
+```
 
 We first add 3 + 1, that equals 4. then we add 2 + 1, which is 3. So the answer is 34.
 We add from the right to the left.
@@ -78,29 +80,37 @@ Binary addition works the same.
 
 We will begin with one bit (binary digit) addition.
 
+```
     0
 +   0
 =   1
+```
 
 and
 
+```
     0  
 +   1
 =   1
+```
 
 and 
 
+```
     1
 +   1
 =   10
+```
 
 1 + 1 carries us into the next column.
 
 Try it yourself:
 
+```
     111
 +   110
 =   ???
+```
 
 Also, pretty much every operator works in the same way it does with binary as with decimal.
 
