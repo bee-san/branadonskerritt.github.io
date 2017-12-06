@@ -52,7 +52,7 @@ Now we know this, we can convert this simply.
 The binary to powers of 2 graph looks like this.
 8192 | 4096 | 2048 | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
 
 If the number uses an 8, put a 1 in the binary box under it to represent that it uses an 8. I much prefer to use this method though:
 
