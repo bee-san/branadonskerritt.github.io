@@ -154,7 +154,6 @@ and now this represents -15! How creative and cool!
 
 ## Addition in binary revisited
 
-TODO: fix this
 
 Let's say we have 2 numbers, -3 and -5.
 In binary these are:
@@ -183,10 +182,11 @@ So 4 - 3 is just 4 + (-3)
 
 Which is just 
 
+```
   0100
 + 1101
   0001
-
+```
 as we ignore the carry again.
 
 ## Overflow
@@ -195,9 +195,11 @@ Overflow is when more bits are stored in the binary value than it could hold.
 
 An example of this is 4 + 7 in 4-bit binary.
 
+```
   0100  
 + 0101
   1001
+  ```
 
 The correct result, 9, is too big to fit into 4 bit representation, as the 1 on the front makes it negative 1.
 
@@ -205,3 +207,5 @@ If both inputs to an addition have the same sign, and the output sign is differe
 
 Overflow cannot occur if the signs differ.
 
+# Connect with me
+[LinkedIn](https://www.linkedin.com/in/brandonls) | [GitHub](https://www.github.com/brandonskerritt) | [Website](https://www.brandonskerritt.github.io/about/)
