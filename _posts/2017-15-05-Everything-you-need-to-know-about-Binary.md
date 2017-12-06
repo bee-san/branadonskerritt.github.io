@@ -1,10 +1,7 @@
 ---
 title: "Everything you need to know about Binary
 categories:
-  - Comp105
-tags:
-  - Haskell
-  - Functional
+  - Maths
 ---
 
 # What is a number system?
@@ -184,17 +181,17 @@ as we ignore the carry again.
 
 ## Overflow
 
+Overflow is when more bits are stored in the binary value than it could hold. 
 
-**Overflow**
-
-An example of this is 4 + 7
+An example of this is 4 + 7 in 4-bit binary.
 
   0100  
 + 0101
   1001
 
-The correct result, 9, is too big to fit into 4 bit representation.
+The correct result, 9, is too big to fit into 4 bit representation, as the 1 on the front makes it negative 1.
 
-If both inputs to an addition have the same sign, and the output sign is different, overflow has occured.
+If both inputs to an addition have the same sign, and the output sign is different, overflow has occurred.
 
 Overflow cannot occur if the signs differ.
+
