@@ -156,11 +156,20 @@ and we want to add them together.
 
 But this time we can ignore any carries that go off the end.
 
+So we use the largest power of 2 that can fit both 5 and 3 into it, which is 8. But this time we make it negative.
 
-In 8 bit binary (note, if we carry 1's far to the left we can just ignore them)
-And then to get the negative result, we perform two's complement again to get
+Number | -8 | 4 | 2 | 1
+--- | --- | --- | --- | ---
+-3 | 1 | 1 | 0 | 1
+-5 | 1 | 0 | 1 | 1
 
-**Subtraction in binary**
+Now we simply add them. 
+1 + 1 is 0 carry 1, the next line is 1 + 1 which is 0 so carry that, the next line is 1 + 1 which is 0 so carry that, the next line is 1 + 1 + 1 which is 1 carry 1, but this time we can throw away the carry and we're left with 1000 as an answer.
+
+Many thanks to Jahan Ulhaque, Computer Science Student at University of Liverpool for showing me this method.
+
+
+## Subtraction in Binary
 
 Treat this as addition but negate the second operand.
 So 4 - 3 is just 4 + (-3)
@@ -171,3 +180,21 @@ Which is just
 + 1101
   0001
 
+as we ignore the carry again.
+
+## Overflow
+
+
+**Overflow**
+
+An example of this is 4 + 7
+
+  0100  
++ 0101
+  1001
+
+The correct result, 9, is too big to fit into 4 bit representation.
+
+If both inputs to an addition have the same sign, and the output sign is different, overflow has occured.
+
+Overflow cannot occur if the signs differ.
