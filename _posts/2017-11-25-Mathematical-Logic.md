@@ -1,10 +1,9 @@
 ---
 title: "Mathematical Logic"
 categories:
-  - Comp105
+  - Mathematical logic
 tags:
-  - Haskell
-  - Functional
+  - Math
 ---
 # What is logic
 
