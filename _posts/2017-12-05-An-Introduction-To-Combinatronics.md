@@ -111,7 +111,7 @@ So, there are 36^8 possible password permutations. We know the alphabet is 26 le
 
 
 
-
+a
 
 
 A more fun and useful problem. Apple's default password settings are one character has to be upper case, there has to be numbers and it has to be at least 7 characters long.
