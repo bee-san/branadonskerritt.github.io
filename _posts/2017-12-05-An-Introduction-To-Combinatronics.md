@@ -6,7 +6,7 @@ categories:
 
 # What is Combinatorics?
 
-please consider the following problems:
+Please consider the following problems:
 
 *  How many possible sudoku puzzles are there?
 *  Do 37 Londoners exist with the same number of hairs on their head?
@@ -107,23 +107,42 @@ So, there are 36^8 possible password permutations. We know the alphabet is 26 le
 
 36^8 - 26^8 = 2612282842880.
 
-## Apple passwords, revisited.
-
-
-
-a
-
+## Hacking Apple's Passwords
 
 A more fun and useful problem. Apple's default password settings are one character has to be upper case, there has to be numbers and it has to be at least 7 characters long.
 
-That means there is 26 * 2 possibilities for any given character in the password, so 52 possible outcomes and then times by 10 because it could be a digit. So that's 520^7 which is 10280717025280000000. Boy, that's alot!
 
-But we can guess some things. Firstly, the typical user will have a capital letter at the start of their password and the number at the end of the password. So it will look something like this:
+That means there is 26 * 2 possibilities for any given character in the password, so 52 possible outcomes and then add 10 as it could be a digit, 52^7 = 1028071702528
 
-{A..B}xybeh{0..9}
+But we can guess some things. Firstly, the typical user will have a capital letter at the start of their password and most often they will only use lowercase after that. The lowercase charecters will consist of {a..b or 0..9} as it has to include a number somewhere.
 
-Note: for every item in "xybeh" each item should be represented by {1..26} but for brevity it is represented as a variable
+{A..B}xxxxxx
 
-Now we just work it out one step at a time, so the first letter would be 26 possible outcomes, to the power of 6 as theres 26 possible outcomes for non-capital letters too. So that's 26^6 * 10^1 which is 6760. See how we've reduced the terrifyingly massive number down to something less than 7000? A computer can go through every permutation in a second! 
+So that's 26 + 10 = 36, therefore the password is now 26^1 * 36^6 = 56596340736.
 
-See how easy it is to hack someone if you know the very basics of their password?
+Buttt we can guess more information. The user's password will start with a capital letter, contain only lower-case letters in it and end with a number. Do you have a password like this? Well, after this you might want to change it...
+
+So, the format is:
+
+{A..B}xxxxx{0..9}
+
+Where x = {a..b}
+
+Okay, so work this out one at a time.
+
+26^1 * 26^5 * 10^1 = 3089157760.
+
+The possibillities of passwords decreased by 300% by knowing some simple things about their password.
+
+But wait, we can guess some more.
+
+The password will likely be a word, followed by a number.
+
+According to [this](wordfinder.yourdictionary.com/letter-words/6) there are 15,000 words that are 6 letters long.
+
+So we know that the first section will be 15,000 and then it's followed by a random number, 0 to 9. So we have 15,000 * 10 = 150000.
+
+A lot less than what was originally guessed. Knowing some basic information about a user, you can cut down the time it takes to hack their password by 3/4ths.
+
+# Subtraction Rule
+
