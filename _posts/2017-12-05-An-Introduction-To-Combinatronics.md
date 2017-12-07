@@ -37,22 +37,6 @@ Well, the first letter has 26 possible letters and so does the second letter. Th
 Therefore there is a total combination of:
 26^2 * 10^3 = 676,000
 
-## Example 2
-
-A more fun and useful problem. Apple's default password settings are one character has to be upper case, there has to be numbers and it has to be at least 7 characters long.
-
-That means there is 26 * 2 possibilities for any given character in the password, so 52 possible outcomes and then times by 10 because it could be a digit. So that's 520^7 which is 10280717025280000000. Boy, that's alot!
-
-But we can guess some things. Firstly, the typical user will have a capital letter at the start of their password and the number at the end of the password. So it will look something like this:
-
-{A..B}xybeh{0..9}
-
-Note: for every item in "xybeh" each item should be represented by {1..26} but for brevity it is represented as a variable
-
-Now we just work it out one step at a time, so the first letter would be 26 possible outcomes, to the power of 6 as theres 26 possible outcomes for non-capital letters too. So that's 26^6 * 10^1 which is 6760. See how we've reduced the terrifyingly massive number down to something less than 7000? A computer can go through every permutation in a second! 
-
-See how easy it is to hack someone if you know the very basics of their password?
-
 # Disjoint Events
 
 Two events are said to be disjoint if they cannot happen at the same time.
@@ -115,9 +99,31 @@ So there are 8 charecters
 
 And each one is either an uppercase character or digit. We will make a variable to shorten it.
 X = {A..Z or 0..9}
-So there is 26 uppercase letters and 10 digits and we want to know what |{A..Z or 0..9}| is so using the above formula we could just do |A| + |B| which is just 26 + 10 = 36 possible outcomes.
+So there is 26 uppercase letters and 10 digits and we want to know what |{A..Z or 0..9}| is so using the above formula we could just do |A| + |B| which is just 26 + 10 = 36 possible outcomes for every charecter in the password.
 
-36^8 - 26^8 because 26^8 is every password without a number in it and 
+But, there is a problem. There exists passwords which do not have numbers in them, at all. Becuase of this, we need to take them out of the data set. 
+
+So, there are 36^8 possible password permutations. We know the alphabet is 26 letters long, so therefore there must be 26^8 passwords which only contain letters (pigeon hole principle). Now we need to take away.
+
+36^8 - 26^8 = 2612282842880.
+
+## Apple passwords, revisited.
 
 
 
+
+
+
+A more fun and useful problem. Apple's default password settings are one character has to be upper case, there has to be numbers and it has to be at least 7 characters long.
+
+That means there is 26 * 2 possibilities for any given character in the password, so 52 possible outcomes and then times by 10 because it could be a digit. So that's 520^7 which is 10280717025280000000. Boy, that's alot!
+
+But we can guess some things. Firstly, the typical user will have a capital letter at the start of their password and the number at the end of the password. So it will look something like this:
+
+{A..B}xybeh{0..9}
+
+Note: for every item in "xybeh" each item should be represented by {1..26} but for brevity it is represented as a variable
+
+Now we just work it out one step at a time, so the first letter would be 26 possible outcomes, to the power of 6 as theres 26 possible outcomes for non-capital letters too. So that's 26^6 * 10^1 which is 6760. See how we've reduced the terrifyingly massive number down to something less than 7000? A computer can go through every permutation in a second! 
+
+See how easy it is to hack someone if you know the very basics of their password?
