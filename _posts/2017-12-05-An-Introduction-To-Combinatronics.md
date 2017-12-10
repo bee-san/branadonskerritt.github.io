@@ -23,6 +23,10 @@ Secondly, although these problems may appear diverse and unrelated, they mainly 
 
 The subject of combinatorial analysis or combinatorics (pronounced com-bin-a-tor-ics) is concerned with such questions. We may loosely describe it as the branch of mathematics concerned with selecting, arranging, constructing, classifying, and counting or listing things.
 
+This is really important, so make sure to memorise it:
+Permutations are **ordered** combinations. We don't care about the order of combinations.
+If you have a locker number, 4457, you care about the order because 5474 wouldn't work.
+
 # Product Rule
 
 If there is a sequence of K events with n1 ... nk possible outcomes, then the total number of outcomes for the sequence of K events is n1 x n2 x ... nk
@@ -144,5 +148,37 @@ So we know that the first section will be 15,000 and then it's followed by a ran
 
 A lot less than what was originally guessed. Knowing some basic information about a user, you can cut down the time it takes to hack their password by 3/4ths.
 
+# Combinations Formula
+
+The combinations formula is used to find out how many combinations are possible.
+The formula is:
+
+![Combination Formula](https://screenshots.firefoxusercontent.com/images/053695bb-89af-4b64-a157-49511ba67af8.png)
+
+Let's say we have a deck of playing cards (52) and we want to find out how many different hands you can make when you pull out 5 cards, how would we work that out? 
+
+In this problem the order is irrelevant since it doesn’t matter what order we select the cards.
+
+Well, a typical hand might look like:
+5 of Spades, 6 of Clubs, King of Hearts, Queen of Diamonds.
+and another typical hand might look like:
+6 of Clubs, 5 of Spades, King of Hearts, Queen of Diamonds.
+
+The order doesn't matter here.
+
+![Combinations formula filled out](https://screenshots.firefoxusercontent.com/images/859f5397-9b98-42e9-a419-bc2a63bb81c0.png)
+
+And that's how we work it out, using combinations. By diving by the number of hands that are different permutations but the same combination, aka how many different ways there are to arrange 5 cards.
+
+## Example 2
+
+
+
+
 # Subtraction Rule
+
+
+# Extra Reading
+
+https://medium.com/i-math/combinations-permutations-fa7ac680f0ac
 
