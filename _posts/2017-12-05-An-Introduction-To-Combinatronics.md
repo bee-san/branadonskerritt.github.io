@@ -116,15 +116,15 @@ So, there are 36^8 possible password permutations. We know the alphabet is 26 le
 A more fun and useful problem. Apple's default password settings are one character has to be upper case, there has to be numbers and it has to be at least 7 characters long.
 
 
-That means there is 26 * 2 possibilities for any given character in the password, so 52 possible outcomes and then add 10 as it could be a digit, 52^7 = 1028071702528
+That means there is 26 * 2 possibilities for any given character in the password, so 52 possible outcomes and then add 10 as it could be a digit, 62^7 = 3521614606208
 
 But we can guess some things. Firstly, the typical user will have a capital letter at the start of their password and most often they will only use lowercase after that. The lowercase charecters will consist of {a..b or 0..9} as it has to include a number somewhere.
 
 {A..B}xxxxxx
 
-So that's 26 + 10 = 36, therefore the password is now 26^1 * 36^6 = 56596340736.
+So that's 26 + 10 = 36, therefore the password is now 26^1 * 36^6 = 56596340736 since the first charecter is an uppercase letter.
 
-Buttt we can guess more information. The user's password will start with a capital letter, contain only lower-case letters in it and end with a number. Do you have a password like this? Well, after this you might want to change it...
+Buttt we can guess more information. The user's password will start with a capital letter, contain only lower-case letters in it and end with a number. Do you have a password like this?Well, after this you might want to change it...
 
 So, the format is:
 
@@ -136,7 +136,7 @@ Okay, so work this out one at a time.
 
 26^1 * 26^5 * 10^1 = 3089157760.
 
-The possibillities of passwords decreased by 300% by knowing some simple things about their password.
+The possibilities of passwords decreased by 300% by knowing some simple things about their password.
 
 But wait, we can guess some more.
 
@@ -144,7 +144,11 @@ The password will likely be a word, followed by a number.
 
 According to [this](wordfinder.yourdictionary.com/letter-words/6) there are 15,000 words that are 6 letters long.
 
-So we know that the first section will be 15,000 and then it's followed by a random number, 0 to 9. So we have 15,000 * 10 = 150000.
+We know that the first letter will be a capital letter, snd we know that it ends with a number.
+
+{A..Z{(5 letters here to make the world}{0..9}
+
+So we know that the first section will be 15,000 and then it's followed by a random number, 0 to 9. So we have 15,000 + 10 = 15010
 
 A lot less than what was originally guessed. Knowing some basic information about a user, you can cut down the time it takes to hack their password by 3/4ths.
 
@@ -172,11 +176,69 @@ And that's how we work it out, using combinations. By diving by the number of ha
 
 ## Example 2
 
+Consider the problem of choosing 5 members from a group of 12 to work on a special project. How many distinct five-person teams can be chosen?
 
+The number of 5-person teams is the same as the number of subsets of 5-combinations size that can be chosen from the set of twelve. So we would use the combinations formula for this:
 
+```
+12!/5!(12-5)! 
+```
+
+And simplifying this (by simply expanding the factorials and dividing the numbers by hand) we get 11 * 9 * 8 which is 792.
 
 # Subtraction Rule
 
+The subtraction rule is really simple. If given 2 sets, A and B and they share common outcomes between them then the total number of outcomes is A + B - (A intersection B)
+
+# Teams that contain both or neither
+
+Suppose two members of the group of 12 insist on working as a pair - any team must contain either both or neither. How many five-person teams can be formed?
+
+Call the two members of the group that insist on working as a pair A and B. Then any team formed must contain both A and B or neither A nor B. 
+
+Because a team that contains both A and B contains exactly three other people from the remaining ten in the group, there are as many such teams as there are subsets of three people that can be chosen from the remaining ten. 
+
+By the combinations formula we get 
+
+```
+10! / 3! * 10! 
+```
+
+Which is 120.
+
+Because a team that contains neither A nor B contains exactly five from the other remaining ten, there are as many such teams as there are subsets of five people that can be chosen from the remaining ten. By the combination therom again there is
+
+```
+10! / 5! * 5!
+```
+
+
+Which is 252.
+
+Because the set of teams that contain both A and B is disjoint from the set of teams that contain neither A nor B, by the addition rule:
+
+Number of teams containing both A and B or neither A nor B = Number of teams containing A and B + Number of teams containing neither A nor B
+which in maths is
+120 + 252 = 372.
+
+# K-permutations
+
+If you a selection of K distinct elements of a set, where order matters then you would use this formula:
+
+```
+n! / (n-k)!
+```
+
+## Example question
+
+How many ways are there to select 3 students for a prospectus photograph (order matters) from a group of 5?
+
+P(5, 3) = 5! / 2! = 60
+Note: (5, 3) notes that you want to select 3 students from a set of 5.
+
+# Binomial coefficients
+
+The quantity C(n, k) which gives the number of k-combinations of a set of size n, is called a bionomial coefficient. 
 
 # Extra Reading
 
