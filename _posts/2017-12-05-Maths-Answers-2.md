@@ -3,6 +3,11 @@ title: "Math Answers Explained"
 categories:
   - Foundations
 ---
+
+# Note to my classmates
+
+This document has been compiled by Jahan Ulhaque and myself. The answers **may not** be right. If you can solve some of them yourself, please do and inform me. This document is here to help you get the aanswers to questions you're not sure of in order to aide revision. This is a group document and can be edited on GitHub also.
+
 # Question 1 
 
 Let A = {2, 3} and B = {a, b, c}. List the elements of A × B.
@@ -260,4 +265,10 @@ Which is 8640
 # Question 14
 
 How many length 4 sequences of distinct digits are there?
+
+So, distinct is a keyword here.
+_ _ _ _ 
+
+There are 10 digits per space, but because it's distinct that makes it
+10 * 9 * 8 * 7
 
