@@ -101,7 +101,8 @@ S 1,  F,  F,  T,  T,  T
   
 # Question 5
 Let T = {(2, 3),(1, 2),(3, 1)}. List the set of ordered pairs in the transitive closure of T
-*skipped*
+
+T = {(1, 2), (2, 1), (2, 2), (2, 3), (3, 1)}
 
 # Question 6
 
@@ -114,6 +115,62 @@ Which of the following sentences are propositions?
 (5) 5 + 7 = 10
 
 Question 1, 2, 4, and 5 are all propositional statements as they have a true or false value.
+
+# Question 7
+
+Which of the following are true:
+
+P0 V p1 = p0 ^ p1
+
+No, P0 or p1 is not the same as p0 and p1.
+
+p0 ^ (p0 -> p1) = p1
+
+We can just use a truth table.
+
+p0 | p1 | p0 -> p1 
+--- | --- | ---
+1 | 1 | 1
+0 | 1 | 1
+1 | 0 | 0
+0 | 0 | 1
+
+No, because the truth table values do not match. If p0 and p1 are false then p0 -> p1 is true. Therefore they are not equvialent.
+
+p0 -> p1 = ¬p1 V p0
+
+Yes, this is true. This was shown in lectures, but we can construct a truth table to prove it.
+
+p0 | p1 | p0 -> p1 | ¬p1 V p0
+--- | --- | --- | ---
+1 | 1 | 1 | 1
+1 | 0 | 1 | 1
+0 | 1 | 0 | 0
+0 | 0 | 1 | 1
+
+Everytime p0 -> p1 is true, ¬p1 V p0 is true. Vice-versa for falsity.
+
+(p1 ∧ (p0 → p1)) ≡ ¬p0
+
+Again, construct a truth table,
+
+p1 | p0 | p0 -> p1 | ¬p0 | (p1 ∧ (p0 → p1))
+--- | --- | --- | --- | ---
+1 | 1 | 1 | 0 | 0
+1 | 0 | 0 | 1 | 0
+0 | 1 | 0 | 0 | 0
+0 | 0 | 1 | 1 | 1
+
+**Note to reader**
+Check my truth table.
+
+In this instance, this is false because we have found an intrepretation under which the left handside is false and the right handside is true.
+
+(p0 ∧ p1) ≡ (p0 ∧ (p0 → p1))
+
+Again, we construct a truth table
+
+
 
 
 
