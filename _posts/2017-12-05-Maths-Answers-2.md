@@ -168,14 +168,96 @@ In this instance, this is false because we have found an intrepretation under wh
 
 (p0 ∧ p1) ≡ (p0 ∧ (p0 → p1))
 
-Again, we construct a truth table
+Again, we construct a truth table.
+
+p0 | p1 | p0 ^ p1 | p0 -> p1 | p0 ∧ (p0 → p1)
+--- | --- | --- | --- | ---
+1 | 1 | 1 | 1 | 1
+1 | 0 | 0 | 0 | 0
+0 | 1 | 0 | 1 | 0
+0 | 0 | 0 | 1 | 0
+
+Thus they are the same.
+
+# Question 8
+
+For the table below, construct a circuit having the given table as it's input / output table.
+
+To solve this create 3 inputs, P, Q, R and 1 output, S.
+
+# Question 9
+
+Represent 183 in binary notation.
+
+128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+--- | --- | --- | --- | --- | --- | --- | ---
+1 | 0 | 1 | 1 | 0 | 1 | 1 | 1
+
+Simples!
+
+# What is the 4-bit two's complement of 5?
 
 
+First, turn 5 into 4-bit binary.
 
+8 | 4 | 2 | 1
+--- | --- | --- | ---
+0 | 1 | 0 | 1
 
+Now invert the numbers
 
+1010
 
+Now add +1
 
+1011
 
+And we are done!
 
+# Question 11
+
+Using the 4-bit representation, compute the sum 4 + (-5)
+
+So we know -5 is 1011
+
+and we can quickly convert 4 into binary as 100
+
+So now we do
+1011 + 100 which is 1111. 
+
+# Question 12
+
+A password consists of three lower-case letters followed by a three digit number. The three digit number must satrt with 0 or with 1 or with 2. How many passwords are there?
+
+So that's
+_ _ _ _ _ _
+So 3 lower cases letters, that's
+26 * 26 * 26 _ _ _ 
+The number must start with 0, 1, or 2. So that's
+
+26 * 26 * 26 * 3 * 10 * 10
+
+# Question 12
+
+How many ways can a 2-person subcommittee be chosen from a 6-person commitee?
+
+So here, order matters. If we have 6 people named:
+
+John, Frank, Boris, Floriana, Bethan, Zelda and we want to pick two people we could do:
+
+n! / (n-k)!
+
+Which is just
+
+6! / 4!
+
+However, this is for permutations. In this instance, we will get {Bethan, Florianna} and {Florianna, Bethan}. We need to divide by how many permutations there are to get the pure amount of subcommittees where there are no repeats like this.
+
+6! / 2! * 4!
+
+Which is 8640
+
+# Question 14
+
+How many length 4 sequences of distinct digits are there?
 
