@@ -150,8 +150,8 @@ p0 | p1 | p0 -> p1 | ¬p1 V p0
 --- | --- | --- | ---
 1 | 1 | 1 | 1
 1 | 0 | 0 | 1
-0 | 1 | 0 | 0
-0 | 0 | 1 | 1
+0 | 1 | 1 | 1
+0 | 0 | 1 | 0
 
 Everytime p0 -> p1 is true, ¬p1 V p0 is true. Vice-versa for falsity.
 
