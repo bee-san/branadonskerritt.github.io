@@ -264,13 +264,14 @@ However, this is for permutations. In this instance, we will get {Bethan, Floria
 
 6! / 2! * 4!
 
-Which is 8640
+Which is 15
 
 # Question 14
 
 How many length 4 sequences of distinct digits are there?
 
 So, distinct is a keyword here.
+
 _ _ _ _ 
 
 There are 10 digits per space, but because it's distinct that makes it
