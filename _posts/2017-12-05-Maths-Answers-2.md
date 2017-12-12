@@ -6,7 +6,7 @@ categories:
 
 # Note to my classmates
 
-This document has been the UoL CS FB Groupchat. The answers **may not** be right. If you can solve some of them yourself, please do and inform me. This document is here to help you get the aanswers to questions you're not sure of in order to aide revision. This is a group document and can be edited on GitHub also.
+This document has been  compiled by UoL CS FB Groupchat. The answers **may not** be right. If you can solve some of them yourself, please do and inform me. This document is here to help you get the aanswers to questions you're not sure of in order to aide revision. This is a group document and can be edited on GitHub also.
 
 # Question 1 
 
@@ -84,6 +84,9 @@ Let S ⊆ B × C be given by
 S = {(x, y) | x < y}.
 List the set of ordered pairs in the inverse relation S−1 of S.
 B = {1, 2, 3, 4} and C = {3, 4, 5}.
+
+S = {3, 4}
+
 **maybe correct**
 ```
 (1,3),(1,4),(1,5)
