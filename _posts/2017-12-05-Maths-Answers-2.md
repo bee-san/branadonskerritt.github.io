@@ -98,13 +98,14 @@ S = {3, 4}
 ## Part C
 Compute the matrix representation of S ◦ R
 
-
+```
 o R=  1,  2,  3,  4,  5
 S 1,  F,  F,  T,  T,  T
   2,  F,  T,  F,  T,  T
   3,  F,  F,  F,  T,  T   = Matrix
   4,  F,  F,  F,  F,  T
   5,  F,  F,  F,  F,  F
+```
   
   
 # Question 5
