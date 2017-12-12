@@ -149,7 +149,7 @@ Yes, this is true. This was shown in lectures, but we can construct a truth tabl
 p0 | p1 | p0 -> p1 | ¬p1 V p0
 --- | --- | --- | ---
 1 | 1 | 1 | 1
-1 | 0 | 1 | 1
+1 | 0 | 0 | 1
 0 | 1 | 0 | 0
 0 | 0 | 1 | 1
 
