@@ -6,7 +6,7 @@ categories:
 
 # Note to my classmates
 
-This document has been compiled by Jahan Ulhaque and myself. The answers **may not** be right. If you can solve some of them yourself, please do and inform me. This document is here to help you get the aanswers to questions you're not sure of in order to aide revision. This is a group document and can be edited on GitHub also.
+This document has been the UoL CS FB Groupchat. The answers **may not** be right. If you can solve some of them yourself, please do and inform me. This document is here to help you get the aanswers to questions you're not sure of in order to aide revision. This is a group document and can be edited on GitHub also.
 
 # Question 1 
 
