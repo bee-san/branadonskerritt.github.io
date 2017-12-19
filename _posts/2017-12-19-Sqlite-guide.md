@@ -35,23 +35,44 @@ Now thankfully the file doesn't have to exist, if it doesn't exist SQlite will m
 
 ```Python
 class Database_controller():
-	"""
-	Class which handles database stuff. Objects are instantiated with table names
-	so one object per table.
-
-	*Values*
-	self.cursor = SQLite cursor
-	self.db = SQLite db
-
-	"""
 	def __init__(self, table_name):
 		self.cursor = db.cursor()
 		self.db = db
 ```
 
+So using this new class, we can _instanstiate_ an object which contains the cursor and the database for the database we have chosen.
+
+So in our example, we can just write
+
+```Python
+import sqlite3
+database_handler_todo = Database_controller("todo.db")
+```
+and it'll allow us to control the database using an object.
+
+I wanted to make the database controller into an object because this program is a part of a larger program and may have multiple databases open, so it was best to really differentiate the databases like this.
+
+The next step is to create the table we defined above.
+```Python
+def ToDo_create():
+	db_handler = Database_controller("todo.db")
+	db_handler.cursor.execute("""CREATE TABLE
+		todo(id INTEGER PRIMARY KEY, task TEXT,
+		datetime TEXT, addedWhen TEXT)""")
+```
+
+This causes a slight problem. What if we call the create table function again? It'll error. People online have suggested using a try and except loop or seeing if the table already exists, but there's an easier way.
+```Python
+def ToDo_create():
+	db_handler = Database_controller("todo.db")
+	db_handler.cursor.execute("""CREATE TABLE IF NOT EXISTS
+		todo(id INTEGER PRIMARY KEY, task TEXT,
+		datetime TEXT, addedWhen TEXT)""")
+```
+
+The "IF NOT EXISTS" part is very useful to us.
 
 
 
-$$
-\binom{n}{k} = \frac{n!}{k!(n-k)!}
-$$
+
+
