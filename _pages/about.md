@@ -25,14 +25,14 @@ ul {
 
 <h1>My name's Brandon Skerritt.</h1>
 {: .text-center}
-To me, computer science is the beautiful art of solving complex problems with logical and abstract solutions.
+If I had to sum myself up with 3 emoji, it would be 👨‍💻🥋🏃‍♂️
 {: .text-center}
-I have been problem solving since I was a child and programming since I was 11.
+🖥 To me, computer science is the beautiful art of solving complex problems with logical and abstract solutions.
 {: .text-center}
 
-I have been selected by SEO London, an organisation that trains and connects exceptional people from poor backgrounds to succeed.
+🎉 I have been selected by SEO London, an organisation that trains and connects exceptional people from poor backgrounds to succeed.
 {: .text-center}
-I have won 2 hackathons, HackNotts 2016; my first hackathon, and Hack Sheffield 3.0.
+🏆 I have won 2 hackathons, HackNotts 2016; my first hackathon, and Hack Sheffield 3.0. 🎓
 {: .text-center}
 
 **Languages**
@@ -72,7 +72,7 @@ Representing over 200 students in Computer Science<br>
 Regularly attend meetings to discuss and improve the department
 <br>
 
-<h2>🇬🇧SEO London🇬🇧</h2>
+<h2>🇧SEO London🇬</h2>
 <b>Engineering Engagement Programme</b><br>
 2017
 Selected to go to the highly sought after EEP by SEO London<br>
