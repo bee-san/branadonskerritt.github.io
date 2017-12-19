@@ -85,15 +85,9 @@ S = {(x, y) | x < y}.
 List the set of ordered pairs in the inverse relation S−1 of S.
 B = {1, 2, 3, 4} and C = {3, 4, 5}.
 
-S = {3, 4}
+To make an inverse relation, we change it from B x C to C x B.
 
-**maybe correct**
-```
-(1,3),(1,4),(1,5)
-(2,3),(2,4),(2,5)
-(3,4),(3,5)
-(4,5)
-```
+S = {(3, 4)}
 
 ## Part C
 Compute the matrix representation of S ◦ R
@@ -106,7 +100,6 @@ S 1,  F,  F,  T,  T,  T
   4,  F,  F,  F,  F,  T
   5,  F,  F,  F,  F,  F
 ```
-  
   
 # Question 5
 Let T = {(2, 3),(1, 2),(3, 1)}. List the set of ordered pairs in the transitive closure of T
