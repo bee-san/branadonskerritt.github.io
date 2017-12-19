@@ -44,7 +44,7 @@ If I had to sum myself up with 3 emoji, it would be 👨‍💻🥋🏃‍♂️
 <a href="https://git-scm.com/" class="btn btn--primary">Git</a>
 <a href="https://www.british-sign.co.uk/" class="btn btn--primary">Sign Language</a>
 <a href="https://www.british-sign.co.uk/" class="btn btn--primary">SQLite</a>
-<a href="https://www.british-sign.co.uk/" class="btn btn--primary">Markdowne</a>
+<a href="https://www.british-sign.co.uk/" class="btn btn--primary">Markdown</a>
 <a href="https://www.british-sign.co.uk/" class="btn btn--primary">LaTeX</a>
 {: .text-center}
 
