@@ -43,6 +43,9 @@ I have won 2 hackathons, HackNotts 2016; my first hackathon, and Hack Sheffield 
 <a href="https://en.wikipedia.org/wiki/HTML" class="btn btn--primary">HTML5 & CSS3</a>
 <a href="https://git-scm.com/" class="btn btn--primary">Git</a>
 <a href="https://www.british-sign.co.uk/" class="btn btn--primary">Sign Language</a>
+<a href="https://www.british-sign.co.uk/" class="btn btn--primary">SQLite</a>
+<a href="https://www.british-sign.co.uk/" class="btn btn--primary">Markdowne</a>
+<a href="https://www.british-sign.co.uk/" class="btn btn--primary">LaTeX</a>
 {: .text-center}
 
 
@@ -53,6 +56,8 @@ I have won 2 hackathons, HackNotts 2016; my first hackathon, and Hack Sheffield 
 <a href="https://developer.amazon.com/docs/alexa-voice-service/api-overview.html" class="btn btn--primary">Alexa</a>
 <a href="http://api.reimaginebanking.com/" class="btn btn--primary">Capital One</a>
 <a href="https://developer.spotify.com/" class="btn btn--primary">Spotify</a>
+<a href="https://developer.spotify.com/" class="btn btn--primary">Wit.ai</a>
+<a href="https://developer.spotify.com/" class="btn btn--primary">Discord.py</a>
 {: .text-center}
 
 ---
@@ -60,29 +65,27 @@ I have won 2 hackathons, HackNotts 2016; my first hackathon, and Hack Sheffield 
 <h1>Experience</h1>
 {: .text-center}  
 <center>
-<h2>University of Liverpool</h2>
+<h2>🎓University of Liverpool🎓</h2>
 <b>Course Representative / Faculty Representative of Computer Science</b><br>
 Present <br>
 Representing over 200 students in Computer Science<br>
 Regularly attend meetings to discuss and improve the department
 <br>
 
-<h2>SEO London</h2>
-<b>Engineering Engagement Programme 2017</b><br>
-2017<br>
-1 out of 72 candidates specially selected to attend the 2017/18 EEP<br> organised by SEO London together with<br> the Royal Academy of Engineering<br>
-Joined an exclusive network of highly motivated, like-minded individuals striving to succeed<br> while at the same time embodying the ethos of giving back to help future generation
+<h2>🇬🇧SEO London🇬🇧</h2>
+<b>Engineering Engagement Programme</b><br>
+2017
+Selected to go to the highly sought after EEP by SEO London<br>
+Met with multiple recruiters and learnt many valuable employability lessions
 <br>
 
-<h2>East Kent College</h2>
+<h2>🎆East Kent College🎆</h2>
 <b>Higher Education Vice President</b><br>
 2016<br>
 Improved Student Union student's approval rating from ~30% to ~95%<br>
 Interviewed and recruited the next student union president<br>
 As the only student union officer (there were supposed to be 10)<br>
 I did everything from campaigning to events to looking after students.<br>
-
-<br>
 <br>
 
 
