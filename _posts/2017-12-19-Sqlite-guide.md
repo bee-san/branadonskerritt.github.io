@@ -33,7 +33,38 @@ c = conn.cursor()
 
 Now thankfully the file doesn't have to exist, if it doesn't exist SQlite will make the file. Since in this app I will be using more than just one databse object. I decided to make a database controller class and create a new object for every database we make, since I plan on making more than one database.
 
+```Python
+class Database_controller():
+	"""
+	Class which handles database stuff. Objects are instantiated with table names
+	so one object per table.
+
+	*Values*
+	self.cursor = SQLite cursor
+	self.db = SQLite db
+
+	"""
+	def __init__(self, table_name):
+		self.cursor = db.cursor()
+		self.db = db
+```
 
 
 
 
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
