@@ -59,6 +59,7 @@ def ToDo_create():
 	db_handler.cursor.execute("""CREATE TABLE
 		todo(id INTEGER PRIMARY KEY, task TEXT,
 		datetime TEXT, addedWhen TEXT)""")
+    db_handler.db.commit()
 ```
 
 This causes a slight problem. What if we call the create table function again? It'll error. People online have suggested using a try and except loop or seeing if the table already exists, but there's an easier way.
@@ -67,12 +68,32 @@ def ToDo_create():
 	db_handler = Database_controller("todo.db")
 	db_handler.cursor.execute("""CREATE TABLE IF NOT EXISTS
 		todo(id INTEGER PRIMARY KEY, task TEXT,
-		datetime TEXT, addedWhen TEXT)""")
+		dateDue TEXT, dateAdded TEXT)""")
+    db_handler.db.commit()
 ```
 
-The "IF NOT EXISTS" part is very useful to us.
+The "IF NOT EXISTS" part is very useful to us, since if the table does exist it doesn't recreate it. It only creates the table if it doesn't exist. Also, id is a primary key.
 
+A primary key is a unique identifier for each _record_ in a table. A record is simply a row of data, one data object. We need to be able to identify each row uniquely, so we use a primary key. The primary key is auto-incremental, so we don't need to increment it ourselves. Also, no 2 records in the table can have the same id. Sqlite does this for us, so we don't need to worry.
 
+Also notice how we execute commands using the cursor. Everytime we want to 'save' the database, we need to commit it using db.commit().
+
+Most SQL commands are written in capital letters. 
+
+Our next step is to add data to our database.
+``` Python
+def ToDo_add(tuple):
+	# Adds new entry to todo table.
+	from datetime import datetime
+	task = tuple[0]
+	dateCreated = tuple[2]
+	db_handler.cursor.execute("""INSERT INTO todo(task, datetime, addedWhen) VALUES (?, ?, ?)""", (task, datetime1, (datetime.now())))
+	db_handler.db.commit()
+```
+
+So ToDo_add receives a tuple in the format (taskName, taskConfidence, dateCreated). taskConfidence is ignored as this application is using natural language processing, however we won't delve into that here.
+
+We take the values out of the tuples and execute an INSERT into statement.
 
 
 
