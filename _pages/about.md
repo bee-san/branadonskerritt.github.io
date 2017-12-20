@@ -22,7 +22,7 @@ ul {
 }
 </style>
 
-This is a test
+
 
 <h1>My name's Brandon Skerritt.</h1>
 {: .text-center}
