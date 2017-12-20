@@ -95,5 +95,99 @@ So ToDo_add receives a tuple in the format (taskName, taskConfidence, dateCreate
 
 We take the values out of the tuples and execute an INSERT into statement.
 
+The next step is to create a view table function. This function will be able to view the table and present it in a neat manner for the user.
+
+We can start of with
+```Python
+db_handler.cursor.execute("""SELECT * FROM todo""")
+```
+but this isn't presented so well. Let's say we have some data in our database already, when we execute this query we get
+
+```Python
+[(1, 'say goodnight to my dog', '1513857600.0', '2017-12-20 18:59:19.307472'), (2, 'watch Amelie', '1513857600.0', '2017-12-20 18:59:26.187179')]
+```
+Which isn't very human readable.
+There is a Python in library design to print things in a pretty way, let's try that
+
+```Python
+def ToDo_view():
+	from pprint import pprint
+	db_handler = Database_controller("todo.db")
+	db_handler.cursor.execute("""SELECT * FROM todo""")
+	values = db_handler.cursor.fetchall()
+	pprint(values)
+```
+
+Results in
+
+```Python
+[(1, 'say goodnight to my dog', '1513857600.0', '2017-12-20 18:59:19.307472'),
+ (2, 'watch Amelie', '1513857600.0', '2017-12-20 18:59:26.187179')]
+ ```
+
+Hmm. That wasn't any better. We can execute a better query, but I want to perform some maths. I want the added\_when function to display the _age_ of a task and the datetime to be human readable. Since we get a list of tuples, we can simply just access each item in it.
+
+Firstly, I want the name of each column. We can hardcode this in, or we can use a list comprehension.
+
+```Python
+names = [description[0] for description db_handler.cursor.description]
+```
+
+This results in
+
+```
+['id', 'task', 'datetime', 'addedWhen']
+```
+
+Now I want the screen to look a little pretty...
+
+```Python
+print("id\ttask\tdue\tage")
+print("-"*10)
+```
+Okay, now the hard part. We'll try this out first.
+
+```Python
+for i in values:
+	print(str(i[0] + "\t" + str(i[1]) + "\t"))
+```
+
+```Python
+id      task    due     age
+----------
+1       say goodnight to my dog
+2       watch Amelie
+```
+
+Okay, that's better! 
+
+Okay, slight change. The code is now
+
+```Python
+def ToDo_view():
+	from pprint import pprint
+	db_handler = Database_controller("todo.db")
+	db_handler.cursor.execute("""SELECT * FROM todo""")
+	values = db_handler.cursor.fetchall()
+	# names is every single column name
+	names = [description[0] for description in db_handler.cursor.description]
+
+	# gets a list of all tasks
+	list_of_tasks = []
+	for i in values:
+		list_of_tasks.append(i[1])
+
+	longest_task = (len(max(list_of_tasks, key=len)) - 4)
+	# gets the length of the longest task - a tab length
+	spaces = (" " * longest_task)
+	# gets how many spaces the longest task is
+	print("id\ttask{}due\tage".format(spaces))
+	# formarts it so the due column isn't direclty over the longest task
+	print("-"*10)
+
+	for i in values:
+		# prints the values of things
+		print(str(i[0]) + " " + str(i[1]) + "\t")
+```
 
 
