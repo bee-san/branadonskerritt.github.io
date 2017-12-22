@@ -33,9 +33,7 @@ What is the coefficient of \\(x^6\\) in \\((1+x)^8\\)?
 
 Simply plug this into the formula like so
 
-$$ (x+y)^n = \sum_{k=8}^6 {8 \choose 6} = \frac{8!}{6!(8-6)!}$$
-
-Note that whatever we want to find is the bottom number and the total number is on top.
+$$ (x+y)^n = \sum_{k=6}^8 {8 \choose 6} = \frac{8!}{6!(8-6)!}$$
 
 
 $$ \frac{8!}{6!(8-6)!} = \frac{8*7*6*5*4*3*2*1}{6*5*4*3*2*1 * 2*1}$$ 
@@ -44,6 +42,7 @@ $$ = \frac{8*7}{2*1}$$
 
 $$ = \frac{56}{2} = 28$$
 
+Something that may confuse people is, how do we work out what n and k are? Well, we have n objects overall and we want to choose k of them. 
 
 # Pascal's Triangle
 
