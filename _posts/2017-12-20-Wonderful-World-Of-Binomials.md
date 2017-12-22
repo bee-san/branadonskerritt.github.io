@@ -18,6 +18,7 @@ We all remember from school that \\( (a + b)^2 = a^2 + 2ab + b^2) but what if I 
 The Binomial Theorem is the expected method to use for finding binomial coefficients because it is how a computer would compute it.
 The theorem is as follows:
 
+
 $$ (x+y)^n = \sum_{k=0}^n {n \choose k} x^{n - k} y^k $$
 
 Luckily for us, this formula is the same as another formula we've seen, according to [here](http://www.purplemath.com/modules/binomial.htm)
