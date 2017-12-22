@@ -57,3 +57,5 @@ $$ \frac{56}{2} = \frac{8x7}$$
 5 &&1&&5&&10&&10&&5&&1&\\
 6 &1&&6&&15&&20&&15&&6&&1
 \end{tabular}
+
+![Pascal's Triangle](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
