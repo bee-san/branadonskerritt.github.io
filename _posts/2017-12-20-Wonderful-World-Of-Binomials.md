@@ -52,7 +52,8 @@ $$ = \frac{56}{2} = 28$$
 Pascal's triangle is a triangle created by starting off with a 1, starting every line and ending every line with a 1 and adding the numbers above to make a new number; as seen in this gif.
 
 No one could ever explain a maths topic as well as Numberphile, so here's a Numberphile video on it
-https://www.youtube.com/watch?v=0iMtlus-afo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0iMtlus-afo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 Here's the Pascal's Triangle we want.
 ![triangle](https://i.stack.imgur.com/C93ol.png)
