@@ -11,7 +11,7 @@ A binomial is a _polynomial_ with two terms typically in the format \\( (x + y) 
 
 A binomial coefficient is raising a binomial to the power of n, like so \\( (x + y)^n \\).
 
-We all remember from school that \\( (a + b)^2 = a^2 + 2ab + b^2) but what if I was to ask for \\((a+b)^18 \\)? This is where the binomial formula comes in handy. 
+We all remember from school that \\( (a + b)^2 = a^2 + 2ab + b^2\\) but what if I was to ask for \\((a+b)^18 \\)? This is where the binomial formula comes in handy. 
 
 # Binomial Therom
 
