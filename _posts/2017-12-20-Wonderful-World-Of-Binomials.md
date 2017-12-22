@@ -42,7 +42,7 @@ $$ \frac{8x7}{2x1} = 8x7$$
 
 $$ \frac{56}{2} = 8x7$$
 
-= 28
+$$= 28$$
 
 # Pascal's Triangle
 
