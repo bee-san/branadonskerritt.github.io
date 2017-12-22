@@ -1,6 +1,3 @@
-
-
-
 ---
 title: "Wonderful World of Bionomial Coefficients"
 categories:
@@ -39,23 +36,19 @@ $$ (x+y)^n = \sum_{k=8}^6 {8 \choose 6} = \frac{8!}{6!(8-6)!}$$
 Note that whatever we want to find is the bottom number and the total number is on top.
 40320 
 
-$$ \frac{8!}{6!(8-6)!} = \frac{8*7*6*5*4*3*2*1}{6*5*4*3*2*1 * 2*1} $$ 
+$$ \frac{8!}{6!(8-6)!} = \frac{8*7*6*5*4*3*2*1}{6*5*4*3*2*1 * 2*1}$$ 
 
-$$ \frac{8x7}{2x1} = \frac{8x7}$$
+$$ \frac{8x7}{2x1} = 8x7$$
 
-$$ \frac{56}{2} = \frac{8x7}$$
+$$ \frac{56}{2} = 8x7$$
 
 = 28
 
 # Pascal's Triangle
-\begin{tabular}{>{$n=}l<{$\hspace{12pt}}*{13}{c}}
-0 &&&&&&&1&&&&&&\\
-1 &&&&&&1&&1&&&&&\\
-2 &&&&&1&&2&&1&&&&\\
-3 &&&&1&&3&&3&&1&&&\\
-4 &&&1&&4&&6&&4&&1&&\\
-5 &&1&&5&&10&&10&&5&&1&\\
-6 &1&&6&&15&&20&&15&&6&&1
-\end{tabular}
 
 ![Pascal's Triangle](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
+Pascal's triangle is a triangle created by starting off with a 1, starting every line and ending every line with a 1 and adding the numbers above to make a new number; as seen in this gif.
+
+No one could ever explain a maths topic as well as Numberphile, so here's a Numberphile video on it
+https://www.youtube.com/watch?v=0iMtlus-afo
