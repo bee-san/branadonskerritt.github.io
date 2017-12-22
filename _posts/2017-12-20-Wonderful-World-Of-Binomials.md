@@ -36,7 +36,7 @@ Simply plug this into the formula like so
 $$ (x+y)^n = \sum_{k=8}^6 {8 \choose 6} = \frac{8!}{6!(8-6)!}$$
 
 Note that whatever we want to find is the bottom number and the total number is on top.
-40320 
+
 
 $$ \frac{8!}{6!(8-6)!} = \frac{8*7*6*5*4*3*2*1}{6*5*4*3*2*1 * 2*1}$$ 
 
