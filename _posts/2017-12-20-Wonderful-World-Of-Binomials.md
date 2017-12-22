@@ -38,11 +38,10 @@ Note that whatever we want to find is the bottom number and the total number is 
 
 $$ \frac{8!}{6!(8-6)!} = \frac{8*7*6*5*4*3*2*1}{6*5*4*3*2*1 * 2*1}$$ 
 
-$$ \frac{8x7}{2x1} = 8x7$$
+$$ = \frac{8*7}{2*1}$$
 
-$$ \frac{56}{2} = 8x7$$
+$$ = \frac{56}{2} = 28$$
 
-$$= 28$$
 
 # Pascal's Triangle
 
