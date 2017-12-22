@@ -9,7 +9,9 @@ categories:
 First, let's start with a binomial.
 A binomial is a _polynomial_ with two terms typically in the format \\( (x + y) \\).
 
-A binomial coefficient is raising a binomial to the power of n, like so \\( (x + y)^n \\)
+A binomial coefficient is raising a binomial to the power of n, like so \\( (x + y)^n \\).
+
+We all remember from school that \\( (a + b)^2 = a^2 + 2ab + b^2) but what if I was to ask for \\((a+b)^18 \\)? This is where the binomial formula comes in handy. 
 
 # Binomial Therom
 
@@ -51,3 +53,13 @@ Pascal's triangle is a triangle created by starting off with a 1, starting every
 
 No one could ever explain a maths topic as well as Numberphile, so here's a Numberphile video on it
 https://www.youtube.com/watch?v=0iMtlus-afo
+
+Here's the Pascal's Triangle we want.
+![triangle](https://i.stack.imgur.com/C93ol.png)
+
+Pascal's triangle always starts counting from 0, so to solve \\(8\choose 6\\) we simply count 8 rows down, then 6 across. So the row here is the line of the number 1's on the left hand side, and we start counting from 0. So the eigth row is the one that starts with 1, 8. Notice how the second inner column defines what row we're on. 
+
+Now we count 6 across which is... 28. We just found the binomial coefficient using a super neat and easy to draw up triangle. Of course, the hardest part is adding together all the numbers and if the coefficient is large it may be easier to just use the Binomial theorem, but this method still exists and is useful if you've forgotten the binomial theorem.
+
+
+
