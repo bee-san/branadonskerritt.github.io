@@ -30,7 +30,7 @@ LaTeX is not so good at:
 # Creating your first LaTeX document
 
 Let's create a document and go over it in plain english.
-```LaTeX
+$$
 \documentclass{article}
 \title{Freecodecamp and Medium}
 \author{Brandon Skerritt}
@@ -39,7 +39,8 @@ Let's create a document and go over it in plain english.
    \maketitle
    Hello world!
 \end{document}
-```
+$$
+
 
 So the document class is what the document is. In this case, this document is an article. An article much like this Medium article or a scientific paper. Another popular class is Beamer which is used for presentations.
 
