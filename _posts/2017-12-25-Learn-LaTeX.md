@@ -1,7 +1,7 @@
 ---
 title: "Learn how to make top quality word documents with LaTeX"
 categories:
-  - Maths
+  - Blog
 ---
 
 # What is LaTeX?
@@ -52,7 +52,7 @@ You may begin to see that LaTeX uses tags, much like HTML. In fact, both of thes
 The \maketitle tag makes the text into a title.
 
 We get this as a [result](https://latexbase.com/d/1a925e91-60f4-4570-8511-580f422ee8c5)
-
+```
 $$
 \documentclass{article}
 \title{Freecodecamp and Medium}
@@ -63,7 +63,7 @@ $$
    Hello world!
 \end{document}
 $$
-
+```
 You've now made a LaTeX document, yay! Let's explore some more.
 
 ## Mathematical Formulae
