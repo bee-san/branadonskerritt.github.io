@@ -6,37 +6,37 @@ categories:
 
 # A look back on 2017 goals
 These were my new-years resolutions in December of 2016 for 2017:
-To read 52 books this year
+* To read 52 books this year
     Very close, 44 :)
-To go for a run at least 200 / 365 days
+* To go for a run at least 200 / 365 days
     76 days. College got in the way but I've got a trick up my sleeve for this.
-To earn a distinction in my current course
+* To earn a distinction in my current course
     100% in every assignment :)
-To get an A in GCSE maths
+* To get an A in GCSE maths
     Got a B, was off by 2 marks!! 2 MARKS!!!!! sooo close!!
-To attend as many hackathons and BCS events as possible
+* To attend as many hackathons and BCS events as possible
     Attended 1 online BCS event, maybe like 5 hackathons
-Go somewhere really cool this summer
+* Go somewhere really cool this summer
     I went to Germany!!!
-Write more blog posts
+* Write more blog posts
     Oh boy, I wrote 25 blog posts this year! So many!
-Learn alot of German
+* Learn alot of German
     Can't understand Megan and can barely order a coffee
-Make the student experience the best It can be
+* Make the student experience the best It can be
     In the end of the academic year of 2016, the student experience from the students union was under a 30% satisfaction rating (students said that they didn't like the students union). By the time I finished, EVERY SINGLE STATISTIC TO DO WITH THE STUDENTS UNION WENT UP BY 70 - 80%!! Not only that, but I was the *only* SU officer compared to 10 previous officers!
-Get a job
+* Get a job
     I actually did, alot actually. But I gave them all up to study.
-Dress better
+* Dress better
     Hola @ UO for saving my horrible dress sense <3 :) 
-Start saving better
+* Start saving better
     Hey!! I did this too!! I've saved over 11k this year!!
-Contribute more to the technological community
+* Contribute more to the technological community
     Technical blog posts and contributing to open source, I did this too!!!
-Start Meditate
+* Start Meditate
     I do this all the time (mindfullness)
-Write a business plan
+* Write a business plan
     I did this, but the business didn't take off. Oh well, lessons learned.
-Pass my driving test
+* Pass my driving test
     Decided I don't want to drive.
 
 # Goals for 2018
