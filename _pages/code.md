@@ -127,3 +127,16 @@ author_profile: true
 <a href="#" class="btn btn--primary">C#</a>
 <a href="#" class="btn btn--primary">Unity</a>
 <a href="#" class="btn btn--primary">Photoshop</a>
+
+<br>
+<hr>
+<br>
+
+<centre>
+<h2><a href="https://github.com/brandonskerritt/Musk_bot">Musk Bot</a></h2>
+<center>Elon Musk twitter bot created using Markov Chains
+<h3>Made with</h3>
+<center>
+<a href="#" class="btn btn--primary">Python</a>
+<a href="#" class="btn btn--primary">Twitter API</a>
+<a href="#" class="btn btn--primary">Markov Chains</a>
