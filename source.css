@@ -41,8 +41,8 @@ body {
 
 #avatar {    
     /* make a square container */
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 
     /* fill the container, preserving aspect ratio, and cropping to fit */
     background-size: cover;
@@ -73,4 +73,27 @@ body {
     -moz-transform: translate(0,-50px);
     text-align: center;
   }
-  
+
+.thumbnail {
+	display: inline-block;
+	width: 25%;
+	height: 25%;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.thumbnail-text {
+    font-size:2em;
+    text-align: center;
+}
+
+.btn {
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 5px;
+}
+
+p {
+    margin-left: 10px;
+}
