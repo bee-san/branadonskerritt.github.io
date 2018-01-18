@@ -4,27 +4,29 @@ body {
 .title {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #000
 }
 
 .main {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    text-justify: auto;
+}
+.img-circle {
+    border-radius: 50%;
 }
 
-.author{
-    border-radius: 50%;
+.author-image {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    padding-bottom: 20px;
+}
+
+.center-block {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    }
-    
-.author:hover{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-    
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    }
+ }
