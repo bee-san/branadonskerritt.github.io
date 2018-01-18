@@ -38,17 +38,38 @@
     <div class = "containerone">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-          <img src="images/me.jpg" class="img-circle author-image center-block">
+          <img src="images/me.jpg" id="avatar"> <!-- class="img-circle author-image center-block" -->
           <h1 class="title">I'm Brandon<br><br></h1>
-          <h2 class="main"><i class="em em-male-technologist"></i>I'm a Programmer<br>
-          <i class="em em-martial_arts_uniform"></i>A Martial Artist<br>
-          <i class="em em-mage"></i>A Blogger</h2>
+          <h1 class="title">I'm a
+            <span class="title"id="changer">...</span></h1>
+        
+        <script>    var words = ["👨‍💻Programmer", "✍️Blogger", "⛰️Hiker", "🥋Martial Artist"];
+            var i = 0;
+            var text = "...";
+            function _getChangedText() {
+              i = (i + 1) % words.length;
+              return text.replace(/.../, words[i]);
+            }
+            function _changeText() {
+              var txt = _getChangedText();
+                var d = document.getElementById("changer")
+                d.className = "fadeOut";
+                setTimeout(function(){
+                 d.className = "";
+                document.getElementById("changer").innerHTML = txt;
+            }, 1000);
+            }
+            setInterval("_changeText()", 1800);</script>
 
-
-
+          <!--<i class="em em-martial_arts_uniform"></i>An Martial Artist<br>
+          <i class="em em-mage"></i>An Avid Blogger</h2>-->
         </div>
-
       </div>
+    </div>
+    <div class = "containertwo">
+        <div class="row" >
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+              <h2 class = "title">I'm a Programmer</h2>
 
     </div>
 

@@ -30,3 +30,47 @@ body {
     margin-left: auto;
     margin-right: auto;
  }
+
+.containerone {
+    height: 100%;
+    padding-bottom: 20%;
+    }
+.containertwo {
+    background-color:rgb(243, 243, 243)
+}
+
+#avatar {    
+    /* make a square container */
+    width: 200px;
+    height: 200px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fadeOut{
+    visibility: hidden;
+    opacity: 0; 
+   -webkit-transition: all 1s ease-out;
+         -moz-transition: all 1s ease-out;
+          -ms-transition: all 1s ease-out;
+           -o-transition: all 1s ease-out;
+              transition: all 1s ease-out;
+    transform: translate(0,-50px);
+    -webkit-transform: translate(0,-50px);
+    -o-transform: translate(0,-50px); 
+    -moz-transform: translate(0,-50px);
+    text-align: center;
+  }
+  
