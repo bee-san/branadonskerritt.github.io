@@ -31,3 +31,10 @@ Where "," is used as "and" & "and" is used as "intersection"
 ## Conditional Probability
 If p(F_2 = r\_2) does not = 0 then:
 $$ P(f_1=r_1 | f_2=r_2) = \frac{p(f_1=r_1, f_2=r_2)}{p(f_2=r_2)} $$
+
+The multiplication rule is also applicable to random variables
+$$P(f_1=r_1, f_2=r_2) = P(f_1=r_1 | f_2=r_2) * P(f_2=r_2)$$
+
+We sometimes use symbols distinct from numbers to represent the value of a random variable. Like F(weather = sunny).
+
+## Probability distrubtion
