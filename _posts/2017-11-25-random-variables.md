@@ -38,3 +38,9 @@ $$P(f_1=r_1, f_2=r_2) = P(f_1=r_1 | f_2=r_2) * P(f_2=r_2)$$
 We sometimes use symbols distinct from numbers to represent the value of a random variable. Like F(weather = sunny).
 
 ## Probability distrubtion
+The probability distrubtion for a random variable gives the probabilities of all the possible values of the variable. Assume the order of the variables is fixed then:
+
+$$P(weather=sunny)=0.7$$
+$$P(weather=rain)=0.2$$
+$$P(weather=cloudy)=0.08$$
+$$P(weather=Storm)=0.02$$
